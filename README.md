@@ -25,21 +25,25 @@ Proje için aşağıdaki gereksinimlere sahip olmanız gerekmektedir:
    git clone https://github.com/ErdalT1/Laravel-Cafe.git
    cd Laravel-Cafe
 3. **Bağımlılıkları yükleyin:**
+   ```bash
    composer install
    npm install
-4. **Veritabanı ayarlarını yapılandırın:**
+5. **Veritabanı ayarlarını yapılandırın:**
+    ```bash
     DB_CONNECTION=mysql
     DB_HOST=127.0.0.1
     DB_PORT=3306
     DB_DATABASE=veritabani_adi //phpMyAdmin üzerinde oluşturduğunuz herhangi bir veri tabanının ismini verebilirsiniz.
     DB_USERNAME=root
     DB_PASSWORD=
-5. **Veritabanını oluşturun:**
+7. **Veritabanını oluşturun:**
+   ```bash
    php artisan migrate
    php artisan db:seed
 6.**Geliştirme sunucusunu başlatın:**
    Laragonu çalıştırın.
    Terminale şu komutu girin:
+   ```bash
    php artisan serve
 Uygulama tarayıcıda http://127.0.0.1:8000 adresinden erişilebilir olacaktır.
 
